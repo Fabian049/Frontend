@@ -1,0 +1,41 @@
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Create your own map
+
+.head {
+    background-color: #f9f0ff;
+    text-align: center;
+}
+
+.menu{
+    background-color: #151935;
+    color: #f9f0ff;
+}
+$primary: #151935;
+$danger: #f9f0ff;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+h1.titulo{
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+.imglogo{
+  max-width: 100%;
+  height: 120px;
+}
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
