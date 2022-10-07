@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css"/>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -43,49 +44,42 @@
       <table class="table table-responsive table-bordered">
         <thead>
           <tr>
+            <th scope="col">Num</th>
             <th scope="col">Partido</th>
             <th scope="col">Pronostico</th>
             <th scope="col">Cuota</th>
             <th scope="col">Add List</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody id="body">
 
-            <td>Barcelona<br>VS<br>Real Madrid</td>
-            <td>+3.5 goles <br> totales</td>
-            <td>1.45</td>
-            <td><button type="button" class="btn btn-primary">Agregar</button></td>
-          </tr>
-          <tr>
-
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-           
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+         
         </tbody>
       </table> 
       </div>
 
-      <div class="btn-group dropup">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Parley
-        </button>
-        <div class="dropdown-menu">
-          <!-- Dropdown menu links -->
+      <div class="accordion stack" id="accordionExample">
+        <div class="accordion-item">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+
         </div>
-      </div>
-
-
+     
+          </div>
+    
 
 
     
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
     
 </body>
 </html>

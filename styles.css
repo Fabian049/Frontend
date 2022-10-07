@@ -18,6 +18,31 @@ h1.titulo, .titulo.h1 {
   height: 120px;
 }
 
+
+.stack{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.accordion-item {
+  width: 40%;
+  max-width: 400px;
+  min-width: 150px;
+  background-color: var(--principal);
+}
+
+.accordion-button {
+  background-color: var(--principal) !important;
+  color: #fff !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
 /*!
  * Bootstrap  v5.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -26,6 +51,7 @@ h1.titulo, .titulo.h1 {
  */
 :root {
   --bs-blue: #0d6efd;
+  --principal: #151935;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
