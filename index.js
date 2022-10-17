@@ -17,7 +17,6 @@ function CrearLista() {
         <td>${cuota.Partido}</td>
         <td>${cuota.Pronostico}</td>
         <td>${cuota.cuota}</td>
-        <td><button id="1" onclick="agregarStack(${index+1})" type="button" class="btn btn-primary">Agregar</button></td>
       </tr> `
     })
 
