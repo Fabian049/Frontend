@@ -4,9 +4,6 @@ Pronosticos = [{
 
 
 
-
-
-
 const listaCuotas = document.getElementById('body');
 
 function CrearLista() {
