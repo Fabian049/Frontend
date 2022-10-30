@@ -15,12 +15,12 @@
 
     <!-- Customs Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet/less" type="text/css" href="styles.scss" />
+    <link rel="stylesheet" href="styles.scss">
 
  <!--  Scripts -->
  <script src="index.js" defer></script>
-<link rel="stylesheet/less" type="text/css" href="styles.less" />
-<script src="less.js" type="text/javascript"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/less" ></script>
 
 
   </head>
@@ -72,19 +72,15 @@
      
       </div>
 
-      <ul class="responsive-table">
+      <ul class="responsive-table" id="responsive-table">
         <li class="table-header">
-          <div class="col col-1">Job Id</div>
-          <div class="col col-2">Customer Name</div>
-          <div class="col col-3">Amount Due</div>
-          <div class="col col-4">Payment Status</div>
+          <div class="col col-1">Num</div>
+          <div class="col col-2">Partido</div>
+          <div class="col col-3">Pronostico</div>
+          <div class="col col-4">Cuota</div>
+          <div class="col col-5">Añadir</div>
         </li>
-        <li class="table-row">
-          <div class="col col-1" data-label="Job Id">42235</div>
-          <div class="col col-2" data-label="Customer Name">John Doe</div>
-          <div class="col col-3" data-label="Amount">$350</div>
-          <div class="col col-4" data-label="Payment Status">Pending</div>
-        </li>
+        
         </ul>
 
 

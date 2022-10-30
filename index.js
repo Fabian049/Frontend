@@ -5,6 +5,7 @@ Pronosticos = [{
 
 
 const listaCuotas = document.getElementById('body');
+const listaCuotasSmooth = document.getElementById('responsive-table');
 
 function CrearLista() {
     Pronosticos.map((cuota, index)=>{
@@ -17,6 +18,21 @@ function CrearLista() {
       </tr> `
     })
 
+    Pronosticos.map((cuota, index)=>{
+listaCuotasSmooth.innerHTML += `
+
+<li class="table-row" id="${index+1}">
+          <div class="col col-1" >${index+1}</div>
+          <div class="col col-2" >${cuota.Partido}</div>
+          <div class="col col-3" >${cuota.Pronostico}</div>
+          <div class="col col-4" >${cuota.cuota}</div>
+          <div class="col col-5"><button class="btn btn-success">Add</button></div>
+  </li>
+
+`
+
+    }
+    );
 
 }
 CrearLista();
