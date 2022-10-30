@@ -3,14 +3,27 @@
   padding: 0px;
 }
 
+
+
 .head {
   background-color: #f9f0ff;
   text-align: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 3% 50px;
+  align-items: flex-start;
+  background-color: #151935;
+  color: #fff;
+
+}
+
 .menu {
   background-color: #151935;
   display: flex;
+  padding-top: 20px
 }
 
 h1.titulo, .titulo.h1 {
@@ -20,13 +33,21 @@ h1.titulo, .titulo.h1 {
 .head-btns {
     background-color: rgb(247, 219, 64);
     border: none;
-    margin: 15px;
+    margin: 7px;
     color: #151935;
     
 }
 
+.table {
+  width: 90%;
+  border-spacing: 0 1rem;
+  border-collapse: separate;
+}
+
 .head-btns:hover {
-  opacity: 0.5;
+  background-color: rgb(247, 219, 64);
+  opacity: 0.8;
+  transition: 0.2 s linear;
 }
 
 .imglogo {
@@ -39,6 +60,8 @@ html {
   margin: 0;
   padding: 0px;
 }
+
+
 
 .stack{
   display: flex;
@@ -69,5 +92,16 @@ html {
     justify-content: center;
     flex-direction: row;
     padding-top: 20px;
-    width: 90%;
+
+    
+}
+
+thead {
+  background-color: #151935;
+  padding: 38px;
+  color: #fff;
+}
+
+table thead:first-child{
+  border-radius: 10px 5px 3px 4px;
 }
