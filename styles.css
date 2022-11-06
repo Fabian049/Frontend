@@ -22,6 +22,7 @@
 
 }
 
+
 .menu {
   background-color: #151935;
   display: flex;
@@ -48,6 +49,13 @@ h1.titulo, .titulo.h1 {
     margin: 7px;
     color: #151935;
     
+}
+
+.add-btns {
+  background-color: rgb(247, 219, 64);
+    border: none;
+    margin: 7px;
+    color: #151935;
 }
 
 .table {
@@ -139,7 +147,7 @@ table th:last-child {
 
   li {
     border-radius: 7px;
-    padding: 25px 30px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -153,11 +161,12 @@ table th:last-child {
     width: 90%;
     color: #fff;
     font-weight: 500;
+    padding: 25px 30px;
   }
   .table-row {
-       /* box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 10%); */
+       box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 10%);
        width: 90%;
-       border: 2px solid #15193552;
+       border: 1px solid #15193552;
        /* background-color: #1519350d;*/
   }
   .col-1 {
@@ -190,4 +199,40 @@ table th:last-child {
 
   ul {
     padding: 0px;
+  }
+
+  @media screen and (max-width:590px) {
+
+    .col-1 {
+      width: 100%;
+      text-align: end;
+      display: none;
+    }
+    .col-2 {
+      width: 100%;
+    }
+    .col-3 {
+      width: 100%;
+    }
+    .col-4 {
+      width: 100%;
+    }
+    
+    .col-5 {
+      width: 100%;
+      text-align: center;
+    }
+
+    li {
+      border-radius: 7px;
+      padding: 10px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .head-btns {
+      width: 100%;
+    }
+
   }
