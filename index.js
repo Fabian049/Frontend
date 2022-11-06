@@ -57,6 +57,7 @@ function CrearLista() {
 }
 
 CrearLista();
+CrearListAyer();
 
 
 
