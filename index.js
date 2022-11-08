@@ -58,7 +58,7 @@ function mapParley() {
     </div>
     <div class="d-flex w-100 justify-content-between">
     <small>${item.Partido}</small>
-    <button type="button" onClick="removeCuota(${index})" class="btn"><i class="fa-solid fa-trash"></i></button>
+    <button type="button" onClick="removeCuota(${index})" class="btn trash"><i class="fa-solid fa-trash"></i></button>
     </div>
     </a>`
   })

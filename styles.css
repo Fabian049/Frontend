@@ -28,6 +28,10 @@
 
 }
 
+.modal-header {
+  background-color: #151935;
+  color: #fff;
+}
 
 
 .list-section h2 {
@@ -140,7 +144,9 @@ html {
 .modal-body {
   height: 300px;
   overflow-y: scroll;
+ background-color: rgb(248 249 250);
 }
+
 
 .stack {
   display: flex;
@@ -150,6 +156,10 @@ html {
   bottom: 0;
   right: 0;
   width: 25%;
+}
+
+.modal-footer{
+  background-color: rgb(248 249 250);
 }
 
 .accordion-item {
@@ -292,4 +302,17 @@ ul {
     width: 100%;
   }
 
+}
+
+.trash{
+  font-size: small;
+  color: #adb5bd;
+}
+
+.close {
+  padding: 0px;
+  font-size: x-large;
+  margin-right: 0.75rem;
+  color: #fff;
+ 
 }
