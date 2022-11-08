@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="styles.scss">
 
   <!--  Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="index.js" defer></script>
+ 
 
   <!-- Fontawesome Font Icon CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -47,62 +49,32 @@
   </div>
 
 
-  <!--      
+
+       
       <nav class="navbar bg-light">
         <div class="container">
-          <a class="navbar-brand" href="https://www.rushbet.co/?page=get-started#home">
+          <a class="navbar-brand" href="https://www.rushbet.co/?page=get-started#home" target="_blank">
             <img src="https://guiadecasinosonline.com.co/wp-content/uploads/2019/09/logo-rushbet-casino.png" alt="Bootstrap" width="130" height="60">
           </a>
-          <a class="navbar-brand" href="https://betplay.com.co/">
+          <a class="navbar-brand" href="https://betplay.com.co/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/BetPlay-logo.png" alt="Bootstrap" width="130" height="60">
           </a>
-          <a class="navbar-brand" href="https://apuestas.wplay.co/es">
+          <a class="navbar-brand" href="https://apuestas.wplay.co/es" target="_blank">
             <img src="https://static.wikia.nocookie.net/logopedia/images/f/fc/Wplay.co.png/revision/latest?cb=20210520145404&path-prefix=es" alt="Bootstrap" width="130" height="60">
           </a>
         </div>
-      </nav> -->
+      </nav>
 
 
-
-  <!-- <div class="accordion close stack" id="accordionExample">
-        <div class="accordion-item">
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body" id="cuotas">
-              <ul>
-                <li class="stack-item"> 
-                    <div>
-                      <div>
-
-                      </div>
-                      <div></div>
-                    </div>
-                </li>
-              </ul>
-              
-            </div>
-            </div>
-          </div>
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              Parlay
-            </button>
-          </h2>
       
-        </div> -->
-
-
-
-
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Personal Parlay</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Parlay personal</h5>
           <button type="button" class="btn close" data-bs-dismiss="modal" aria-label="Close">
             <i class="fa-solid fa-xmark"></i>
           </button>
@@ -141,10 +113,13 @@
     <h2>Pronosticos del día</h2>
     <!-- Button trigger modal -->
     <div class="parlay">
-      <button type="button" class="btn btn-parlay" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"
+      <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="My Parlay">
+      <button type="button" class="float" data-bs-toggle="modal"  data-bs-target="#modal"
         onclick="openModal()">
-        My Parlay
+        <i class="fa-solid fa-list my-float"></i>
+        <span class="badge">1</span>
       </button>
+    </span>
     </div>
     <ul class="responsive-table" id="responsive-table">
     </ul>
@@ -167,37 +142,12 @@
 
       <h6>Gracias por visitar apuestalofree.com </h6>
 
-      <div>apuestalofree.com es una fuente de recomendacion de apuestas deportivas, apuestalofree.com no se hace
+      <div>Somos fuente de recomendacion de apuestas deportivas, apuestalofree.com no se hace
         responsable de ningún prejuicio o daño por el uso de la
-        informacion apublicada en este sitio.</div>
+        informacion publicada en este sitio.</div>
     </div>
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-
-      <div>Siguenos en nuestras redes sociales</div>
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
+    <br>
+    
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">

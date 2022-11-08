@@ -1,5 +1,7 @@
+import("./service/service.js");
+
 const forecasts = [{
-  "partido": "Barcelona Vs Real Madrid", "Pronostico": "+3.5 goles totales", "cuota": 1.45
+  "Partido": "Barcelona Vs Real Madrid", "Pronostico": "+3.5 goles totales", "cuota": 1.45
 }, { "Partido": "Colombia Vs Alemania", "Pronostico": "+3.5 tarjetas totales", "cuota": 1.82 }, { "Partido": "Betis Vs Chelsea", "Pronostico": "+1.5 tiros a puerta por parte de Salah", "cuota": 2.32 }, { "Partido": "Nacional Vs Millonarios", "Pronostico": "+1.5 goles totales", "cuota": 1.40 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Bucaramanga Vs Jaguares", "Pronostico": "Dayro Moreno marcara", "cuota": 2.0 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Cali Vs Medellin", "Pronostico": "+0.5 tarjetas por parte de Medellin", "cuota": 1.40 }, { "Partido": "Junior Vs Millonarios", "Pronostico": "Gana Junior", "cuota": 1.80 }, { "Partido": "Cucuta Vs Cali", "Pronostico": "Gana Cali", "cuota": 1.60 }]
 
 const yesterday = [{
@@ -11,7 +13,10 @@ parlay = [{
   "Partido": "Barcelona Vs Real Madrid", "Pronostico": "+3.5 goles totales", "cuota": 1.45
 }, { "Partido": "Colombia Vs Alemania", "Pronostico": "+3.5 tarjetas totales", "cuota": 1.82 }, { "Partido": "Betis Vs Chelsea", "Pronostico": "+1.5 tiros a puerta por parte de Salah", "cuota": 2.32 }, { "Partido": "Nacional Vs Millonarios", "Pronostico": "+1.5 goles totales", "cuota": 1.40 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Bucaramanga Vs Jaguares", "Pronostico": "Dayro Moreno marcara", "cuota": 2.0 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Cali Vs Medellin", "Pronostico": "+0.5 tarjetas por parte de Medellin", "cuota": 1.40 }, { "Partido": "Junior Vs Millonarios", "Pronostico": "Gana Junior", "cuota": 1.80 }, { "Partido": "Cucuta Vs Cali", "Pronostico": "Gana Cali", "cuota": 1.60 }]
 
+parlay = []
 
+
+document.querySelector(".badge").style.display = 'none' 
 const todayList = document.getElementById('responsive-table');
 const yesterdayList = document.getElementById('responsive-table-yesterday');
 
@@ -43,25 +48,29 @@ function getEarning() {
 
 function mapParley() {
 
-
+ 
 
   var parlayList = document.getElementById('parlay-list')
+  if (parlay.length == 0){
+    parlayList.innerHTML = '<p class="no-forecast"> No hay cuotas añadidas </p>'
+  }else{
+    parlayList.innerHTML = '';
 
-  parlayList.innerHTML = '';
-
-  parlay.map((item, index) => {
-    parlayList.innerHTML += `
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h6 class="mb-1">${item.Pronostico}</h6>
-      <small class="cuota" >${item.cuota}</small>
-    </div>
-    <div class="d-flex w-100 justify-content-between">
-    <small>${item.Partido}</small>
-    <button type="button" onClick="removeCuota(${index})" class="btn trash"><i class="fa-solid fa-trash"></i></button>
-    </div>
-    </a>`
-  })
+    parlay.map((item, index) => {
+      parlayList.innerHTML += `
+      <div class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">${item.Pronostico}</h6>
+        <small class="cuota" >${item.cuota}</small>
+      </div>
+      <div class="d-flex w-100 justify-content-between">
+      <small>${item.Partido}</small>
+      <button type="button" onClick="removeCuota(${index})" class="btn trash"><i class="fa-solid fa-trash"></i></button>
+      </div>
+      </div>`
+    })
+  }
+  
 }
 
 function removeCuota(index) {
@@ -69,14 +78,19 @@ function removeCuota(index) {
   parlay.splice(index, 1)
   getEarning()
   mapParley()
+
+  if (parlay.length == 0){
+    document.querySelector(".badge").style.display = 'none' 
+  }else{
+    document.querySelector(".badge").innerHTML = parlay.length;
+  }
 }
 
 
-function addCuota(index, id) {
-
-  document.getElementById(id).disabled = true
+function addCuota(index) {
   parlay.push(forecasts[index])
-
+  console.log(parlay)
+  openModal()
 }
 
 function CrearLista() {
@@ -90,7 +104,7 @@ function CrearLista() {
           <div class="col col-2" >${cuota.Partido}<p class="card-subtitle mb-2 text-muted">Partido</p></div></div>
           <div class="col col-3" >${cuota.Pronostico}<p class="card-subtitle mb-2 text-muted">Pronostico</p></div></div>
           <div class="col col-4" >${cuota.cuota}<p class="card-subtitle mb-2 text-muted">Cuota</p></div></div>
-          <div class="col col-5"><button id="btn${index}" onclick="addCuota(${index}, 'btn${index}' )" class="btn head-btns shadow add-hover">Agregar Cuota</button></div>
+          <div class="col col-5"><button id="btn${index}" onclick="addCuota(${index})" class="btn head-btns shadow add-hover">Agregar Cuota</button></div>
   </li>
 
 `
@@ -123,7 +137,17 @@ function CrearLista() {
 }
 
 function openModal() {
+  
   getEarning();
+  mapParley();
+  if( parlay.length == 0){
+    document.querySelector(".badge").style.display = 'none' 
+  }else{
+    document.querySelector(".badge").style.display = 'block' 
+    document.querySelector(".badge").innerHTML = parlay.length;
+  }
+ 
+
 }
 
 CrearLista();
