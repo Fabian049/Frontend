@@ -1,17 +1,120 @@
 import("./service/service.js");
 
-const forecasts = [{
-  "Partido": "Barcelona Vs Real Madrid", "Pronostico": "+3.5 goles totales", "cuota": 1.45
-}, { "Partido": "Colombia Vs Alemania", "Pronostico": "+3.5 tarjetas totales", "cuota": 1.82 }, { "Partido": "Betis Vs Chelsea", "Pronostico": "+1.5 tiros a puerta por parte de Salah", "cuota": 2.32 }, { "Partido": "Nacional Vs Millonarios", "Pronostico": "+1.5 goles totales", "cuota": 1.40 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Bucaramanga Vs Jaguares", "Pronostico": "Dayro Moreno marcara", "cuota": 2.0 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Cali Vs Medellin", "Pronostico": "+0.5 tarjetas por parte de Medellin", "cuota": 1.40 }, { "Partido": "Junior Vs Millonarios", "Pronostico": "Gana Junior", "cuota": 1.80 }, { "Partido": "Cucuta Vs Cali", "Pronostico": "Gana Cali", "cuota": 1.60 }]
+const forecasts = [
+  {
+    "Partido": " Rayo Vallecano – Celta Vigo ",
+    "Pronostico": "Más de 1.5 goles ",
+    "cuota": 1.36
+  },
+  {
+    "Partido": " Real Madrid – Cadiz ",
+    "Pronostico": "Más de 2.5 goles ",
+    "cuota": 1.42
+  },
+  {
+    "Partido": " Lazio – Monza ",
+    "Pronostico": "Gana Lazio ",
+    "cuota": 1.62
+  },
+  {
+    "Partido": " Hellas Verona – Juventus ",
+    "Pronostico": "Gana Juventus ",
+    "cuota": 1.75
+  },
+  {
+    "Partido": " Valencia – Real Betis ",
+    "Pronostico": "Valencia o Empate ",
+    "cuota": 1.33
+  },
+  {
+    "Partido": " Atlético Mineiro-MG - Cuiabá-MT ",
+    "Pronostico": " Más de 1.5 goles ",
+    "cuota": 1.34
+  },
+  {
+    "Partido": " Botafogo-RJ - Santos-SP ",
+    "Pronostico": "Más de 0.5 goles de Santos-SP ",
+    "cuota": 1.50
+  },
+  {
+    "Partido": " FC Magdeburg - Darmstadt 98",
+    "Pronostico": "Ambos Equipos Marcarán(si)",
+    "cuota": 1.48
+  },
+  {
+    "Partido": " SK Beveren - Royal Antwerp FC ",
+    "Pronostico": " Menos de 3.5 goles ",
+    "cuota": 1.38
+  },
+  {
+    "Partido": " Alashkert - FC Urartu ",
+    "Pronostico": " Más de 1.5 goles ",
+    "cuota": 1.41
+  }
+]
 
-const yesterday = [{
-  "Partido": "Barcelona Vs Real Madrid", "Pronostico": "+3.5 goles totales", "cuota": 1.45
-}, { "Partido": "Colombia Vs Alemania", "Pronostico": "+3.5 tarjetas totales", "cuota": 1.82 }, { "Partido": "Betis Vs Chelsea", "Pronostico": "+1.5 tiros a puerta por parte de Salah", "cuota": 2.32 }, { "Partido": "Nacional Vs Millonarios", "Pronostico": "+1.5 goles totales", "cuota": 1.40 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Bucaramanga Vs Jaguares", "Pronostico": "Dayro Moreno marcara", "cuota": 2.0 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Cali Vs Medellin", "Pronostico": "+0.5 tarjetas por parte de Medellin", "cuota": 1.40 }, { "Partido": "Junior Vs Millonarios", "Pronostico": "Gana Junior", "cuota": 1.80 }, { "Partido": "Cucuta Vs Cali", "Pronostico": "Gana Cali", "cuota": 1.60 }]
-
-
-parlay = [{
-  "Partido": "Barcelona Vs Real Madrid", "Pronostico": "+3.5 goles totales", "cuota": 1.45
-}, { "Partido": "Colombia Vs Alemania", "Pronostico": "+3.5 tarjetas totales", "cuota": 1.82 }, { "Partido": "Betis Vs Chelsea", "Pronostico": "+1.5 tiros a puerta por parte de Salah", "cuota": 2.32 }, { "Partido": "Nacional Vs Millonarios", "Pronostico": "+1.5 goles totales", "cuota": 1.40 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Bucaramanga Vs Jaguares", "Pronostico": "Dayro Moreno marcara", "cuota": 2.0 }, { "Partido": "Palmeiras Vs botafogo", "Pronostico": "-2.5 goles totales", "cuota": 1.65 }, { "Partido": "Cali Vs Medellin", "Pronostico": "+0.5 tarjetas por parte de Medellin", "cuota": 1.40 }, { "Partido": "Junior Vs Millonarios", "Pronostico": "Gana Junior", "cuota": 1.80 }, { "Partido": "Cucuta Vs Cali", "Pronostico": "Gana Cali", "cuota": 1.60 }]
+const yesterday = [
+  {
+    "Partido": " Osasuna – FC Barcelona ",
+    "Pronostico": "Gana FC Barcelona ",
+    "cuota": 1.49,
+    "resultado": 1
+  },
+  {
+    "Partido": " Athletic Bilbao - Valladolid ",
+    "Pronostico": "Gana Athletic Bilbao ",
+    "cuota": 1.45,
+    "resultado": 1
+  },
+  {
+    "Partido": " Junior Barranquila - Millonarios ",
+    "Pronostico": "Millonarios FC o Empate ",
+    "cuota": 1.63,
+    "resultado": 1
+  },
+  {
+    "Partido": " Inter - Bolonia ",
+    "Pronostico": "Gana Inter ",
+    "cuota": 1.40,
+    "resultado": 1
+  },
+  {
+    "Partido": " Eintracht Frankfurt – TSG Hoffenheim ",
+    "Pronostico": "Gana Eintracht Frankfurt ",
+    "cuota": 1.70,
+    "resultado": 1
+  },
+  {
+    "Partido": " Fluminense-RJ – Goiás-GO ",
+    "Pronostico": " Gana Fluminense-RJ ",
+    "cuota": 1.42,
+    "resultado": 1
+  },
+  {
+    "Partido": " Coritiba-PR  - Corinthians-SP ",
+    "Pronostico": "Ambos Equipos Marcarán ",
+    "cuota": 2.00,
+    "resultado": 1
+  },
+  {
+    "Partido": " Lecce - Atalanta ",
+    "Pronostico": "Más de 2.5 tiros a puerta por parte de Lecce ",
+    "cuota": 1.50,
+    "resultado": 1
+  },
+  {
+    "Partido": " Palmeiras-SP - América-MG ",
+    "Pronostico": " Gana Palmeiras-SP ",
+    "cuota": 1.55,
+    "resultado": 1
+  },
+  {
+    "Partido": " Independiente santa Fe – Deportivo Pereira ",
+    "Pronostico": " Más de 1.5 goles ",
+    "cuota": 1.87,
+    "resultado": 1
+  }
+]
 
 parlay = []
 
@@ -114,11 +217,7 @@ function CrearLista() {
 
   yesterday.map((cuota, index) => {
 
-    if (index % 2 == 0) {
-      cuota.resultado = 1
-    } else {
-      cuota.resultado = 0
-    }
+ 
 
     yesterdayList.innerHTML += `
 
