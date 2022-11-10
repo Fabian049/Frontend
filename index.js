@@ -124,8 +124,8 @@ const yesterdayDate = new Date(todayDate)
 
 yesterdayDate.setDate(yesterdayDate.getDate() - 1)
 
-document.getElementById('date').innerHTML = todayDate.toLocaleDateString()
-document.getElementById('yesterday-date').innerHTML = yesterdayDate.toLocaleDateString();
+document.getElementById('date').innerHTML = todayDate.toDateString()
+document.getElementById('yesterday-date').innerHTML = yesterdayDate.toDateString();
 document.querySelector(".badge").style.display = 'none' 
 const todayList = document.getElementById('responsive-table');
 const yesterdayList = document.getElementById('responsive-table-yesterday');
