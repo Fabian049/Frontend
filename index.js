@@ -55,7 +55,7 @@ const forecasts = [
 
 const yesterday = [
   {
-    "Partido": " Osasuna – FC Barcelona ",
+    "partido": " Osasuna – FC Barcelona ",
     "Pronostico": "Gana FC Barcelona ",
     "cuota": 1.49,
     "resultado": 1
@@ -84,6 +84,13 @@ const yesterday = [
     "cuota": 1.70,
     "resultado": 1
   },
+  ,
+  {
+    "Partido": " FC Schalke 04 – Mainza 05",
+    "Pronostico": " Ambos Equipos Marcarán ",
+    "cuota": 1.64,
+    "resultado": 0
+  },
   {
     "Partido": " Fluminense-RJ – Goiás-GO ",
     "Pronostico": " Gana Fluminense-RJ ",
@@ -107,18 +114,18 @@ const yesterday = [
     "Pronostico": " Gana Palmeiras-SP ",
     "cuota": 1.55,
     "resultado": 1
-  },
-  {
-    "Partido": " Independiente santa Fe – Deportivo Pereira ",
-    "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.87,
-    "resultado": 1
   }
 ]
 
 parlay = []
 
+const todayDate = new Date()
+const yesterdayDate = new Date(todayDate)
 
+yesterdayDate.setDate(yesterdayDate.getDate() - 1)
+
+document.getElementById('date').innerHTML = todayDate.toLocaleDateString()
+document.getElementById('yesterday-date').innerHTML = yesterdayDate.toDateString();
 document.querySelector(".badge").style.display = 'none' 
 const todayList = document.getElementById('responsive-table');
 const yesterdayList = document.getElementById('responsive-table-yesterday');

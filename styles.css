@@ -36,7 +36,11 @@
 
 .list-section h2 {
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
+}
+
+.date{
+  text-align: center;
 }
 
 h1.titulo,
@@ -69,6 +73,10 @@ h1.titulo,
   background-color: rgb(247, 219, 64);
   opacity: 0.8;
   transition: 0.2 s linear;
+}
+
+.yesterday-date {
+  counter-reset: rgba(218, 216, 216, 0.822);
 }
 
 .imglogo {
