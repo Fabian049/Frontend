@@ -2,118 +2,117 @@ import("./service/service.js");
 
 const forecasts = [
   {
-    "Partido": " Rayo Vallecano – Celta Vigo ",
-    "Pronostico": "Más de 1.5 goles ",
-    "cuota": 1.36
-  },
-  {
-    "Partido": " Real Madrid – Cadiz ",
-    "Pronostico": "Más de 2.5 goles ",
-    "cuota": 1.42
-  },
-  {
-    "Partido": " Lazio – Monza ",
-    "Pronostico": "Gana Lazio ",
-    "cuota": 1.62
-  },
-  {
-    "Partido": " Hellas Verona – Juventus ",
-    "Pronostico": "Gana Juventus ",
-    "cuota": 1.75
-  },
-  {
-    "Partido": " Valencia – Real Betis ",
-    "Pronostico": "Valencia o Empate ",
-    "cuota": 1.33
-  },
-  {
-    "Partido": " Atlético Mineiro-MG - Cuiabá-MT ",
+    "Partido": " Boyacá Chicó - Atlético Huila ",
     "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.34
+    "cuota": 1.44
   },
   {
-    "Partido": " Botafogo-RJ - Santos-SP ",
-    "Pronostico": "Más de 0.5 goles de Santos-SP ",
-    "cuota": 1.50
+    "Partido": "Lyon - Niza ",
+    "Pronostico": " Más de 7.5 Tiros de Esquina ",
+    "cuota": 1.40
   },
   {
-    "Partido": " FC Magdeburg - Darmstadt 98",
-    "Pronostico": "Ambos Equipos Marcarán(si)",
-    "cuota": 1.48
+    "Partido": " Birmingham - Sunderland ",
+    "Pronostico": " Más de 3.5 Tiros de Esquina ",
+    "cuota": 1.40
   },
   {
-    "Partido": " SK Beveren - Royal Antwerp FC ",
-    "Pronostico": " Menos de 3.5 goles ",
-    "cuota": 1.38
+    "Partido": " Torreense - Vilafranquense ",
+    "Pronostico": " Torreense o Vilafranquense s ",
+    "cuota": 1.37
   },
   {
-    "Partido": " Alashkert - FC Urartu ",
-    "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.41
+    "Partido": " Boston Celtics - Denver Nuggets ",
+    "Pronostico": " Boston Celtics ",
+    "cuota": 1.55
+  },
+  {
+    "Partido": " San Antonio Spurs - Milwaukee Bucks ",
+    "Pronostico": " Más de 212.5 total puntos ",
+    "cuota": 1.45
+  },
+  {
+    "Partido": " Oklahoma City Thunder - Toronto Raptors ",
+    "Pronostico": " Menos de 227 total puntos ",
+    "cuota": 1.43
+  },
+  {
+    "Partido": " Toronto Maple Leafs - Pittsburgh Penguins ",
+    "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
+    "cuota": 1.40
+  },
+  {
+    "Partido": " Washington Capitals - Tampa Bay Lightning ",
+    "Pronostico": " Más de 5 Total de goles ",
+    "cuota": 1.40
+  },
+  {
+    "Partido": " Dallas Stars - San José Sharks ",
+    "Pronostico": " Gana Dallas Stars ",
+    "cuota": 1.70
   }
 ]
 
 const yesterday = [
   {
-    "partido": " Osasuna – FC Barcelona ",
-    "Pronostico": "Gana FC Barcelona ",
-    "cuota": 1.49,
-    "resultado": 1
-  },
-  {
-    "Partido": " Athletic Bilbao - Valladolid ",
-    "Pronostico": "Gana Athletic Bilbao ",
-    "cuota": 1.45,
-    "resultado": 1
-  },
-  {
-    "Partido": " Junior Barranquila - Millonarios ",
-    "Pronostico": "Millonarios FC o Empate ",
-    "cuota": 1.63,
-    "resultado": 1
-  },
-  {
-    "Partido": " Inter - Bolonia ",
-    "Pronostico": "Gana Inter ",
-    "cuota": 1.40,
-    "resultado": 1
-  },
-  {
-    "Partido": " Eintracht Frankfurt – TSG Hoffenheim ",
-    "Pronostico": "Gana Eintracht Frankfurt ",
-    "cuota": 1.70,
-    "resultado": 1
-  },
-  ,
-  {
-    "Partido": " FC Schalke 04 – Mainza 05",
-    "Pronostico": " Ambos Equipos Marcarán ",
-    "cuota": 1.64,
+    "Partido": " Rayo Vallecano – Celta Vigo ",
+    "Pronostico": "Más de 1.5 goles ",
+    "cuota": 1.36,
     "resultado": 0
   },
   {
-    "Partido": " Fluminense-RJ – Goiás-GO ",
-    "Pronostico": " Gana Fluminense-RJ ",
+    "Partido": " Real Madrid – Cadiz ",
+    "Pronostico": "Más de 2.5 goles ",
     "cuota": 1.42,
     "resultado": 1
   },
   {
-    "Partido": " Coritiba-PR  - Corinthians-SP ",
-    "Pronostico": "Ambos Equipos Marcarán ",
-    "cuota": 2.00,
+    "Partido": " Lazio – Monza ",
+    "Pronostico": "Gana Lazio ",
+    "cuota": 1.62,
     "resultado": 1
   },
   {
-    "Partido": " Lecce - Atalanta ",
-    "Pronostico": "Más de 2.5 tiros a puerta por parte de Lecce ",
+    "Partido": " Hellas Verona – Juventus ",
+    "Pronostico": "Gana Juventus ",
+    "cuota": 1.75,
+    "resultado": 1
+  },
+  {
+    "Partido": " Valencia – Real Betis ",
+    "Pronostico": "Valencia o Empate ",
+    "cuota": 1.33,
+    "resultado": 1
+  },
+  {
+    "Partido": " Atlético Mineiro-MG - Cuiabá-MT ",
+    "Pronostico": " Más de 1.5 goles ",
+    "cuota": 1.34,
+    "resultado": 1
+  },
+  {
+    "Partido": " Botafogo-RJ - Santos-SP ",
+    "Pronostico": "Más de 0.5 goles de Santos-SP ",
     "cuota": 1.50,
-    "resultado": 1
+    "resultado": 0
   },
   {
-    "Partido": " Palmeiras-SP - América-MG ",
-    "Pronostico": " Gana Palmeiras-SP ",
-    "cuota": 1.55,
-    "resultado": 1
+    "Partido": " FC Magdeburg - Darmstadt 98",
+    "Pronostico": "Ambos Equipos Marcarán(si)",
+    "cuota": 1.48,
+    "resultado": 0
+  },
+  {
+    "Partido": " SK Beveren - Royal Antwerp FC ",
+    "Pronostico": " Menos de 3.5 goles ",
+    "cuota": 1.38,
+    "resultado": 0
+  },
+  {
+    "Partido": " Alashkert - FC Urartu ",
+    "Pronostico": " Más de 1.5 goles ",
+    "cuota": 1.41,
+    "resultado": 0
   }
 ]
 
@@ -232,7 +231,7 @@ function CrearLista() {
           <div class="col col-2" >${cuota.Partido}<p class="card-subtitle mb-2 text-muted">Partido</p></div>
           <div class="col col-3" >${cuota.Pronostico}<p class="card-subtitle mb-2 text-muted">Partido</p></div>
           <div class="col col-4" >${cuota.cuota}<p class="card-subtitle mb-2 text-muted">Partido</p></div>
-          <div class="col col-4" style='color: ${cuota.resultado ? 'Green' : 'Red'}' >${cuota.resultado ? 'Win' : 'Lose'}<p class="card-subtitle mb-2 text-muted">Resultado</p></div>      
+              
   </li>
 
 `
