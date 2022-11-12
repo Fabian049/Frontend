@@ -2,117 +2,117 @@ import("./service/service.js");
 
 const forecasts = [
   {
-    "Partido": " Boyacá Chicó - Atlético Huila ",
+    "Partido": " Lens - Clermont ",
     "Pronostico": " Más de 1.5 goles ",
     "cuota": 1.44
   },
   {
-    "Partido": "Lyon - Niza ",
-    "Pronostico": " Más de 7.5 Tiros de Esquina ",
-    "cuota": 1.40
+    "Partido": "  Bayer Leverkusen – VfB Stuttgart ",
+    "Pronostico": " Gana Bayer Leverkuse ",
+    "cuota": 1.79
   },
   {
-    "Partido": " Birmingham - Sunderland ",
-    "Pronostico": " Más de 3.5 Tiros de Esquina ",
-    "cuota": 1.40
-  },
-  {
-    "Partido": " Torreense - Vilafranquense ",
-    "Pronostico": " Torreense o Vilafranquense s ",
+    "Partido": " Sampdoria - Lecce ",
+    "Pronostico": " Más de 0.5 goles de Sampdoria ",
     "cuota": 1.37
   },
   {
-    "Partido": " Boston Celtics - Denver Nuggets ",
-    "Pronostico": " Boston Celtics ",
-    "cuota": 1.55
+    "Partido": " Los Angeles Clippers - Brooklyn Nets  ",
+    "Pronostico": " Handicap Brooklyn Nets +7",
+    "cuota": 1.44
   },
   {
-    "Partido": " San Antonio Spurs - Milwaukee Bucks ",
-    "Pronostico": " Más de 212.5 total puntos ",
-    "cuota": 1.45
+    "Partido": " Washington Wizards - Utah Jazz ",
+    "Pronostico": " Más de 213 puntos total ",
+    "cuota": 1.40
   },
   {
-    "Partido": " Oklahoma City Thunder - Toronto Raptors ",
-    "Pronostico": " Menos de 227 total puntos ",
-    "cuota": 1.43
+    "Partido": " Detroit Pistons - Boston Celtics ",
+    "Pronostico": " Handicap Detroit Pistons +16",
+    "cuota": 1.41
   },
   {
-    "Partido": " Toronto Maple Leafs - Pittsburgh Penguins ",
+    "Partido": " Indiana Pacers - Toronto Raptors ",
+    "Pronostico": " Más de 221.5 total puntos ",
+    "cuota": 1.40
+  },
+  {
+    "Partido": " Philadelphia Flyers - Ottawa Senators ",
+    "Pronostico": " Ottawa Senators +1 Hándicap - Tiempo reglamentario ",
+    "cuota": 1.38
+  },
+  {
+    "Partido": " New Jersey Devils - Arizona Coyotes ",
     "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
-    "cuota": 1.40
+    "cuota": 1.47
   },
   {
-    "Partido": " Washington Capitals - Tampa Bay Lightning ",
-    "Pronostico": " Más de 5 Total de goles ",
-    "cuota": 1.40
-  },
-  {
-    "Partido": " Dallas Stars - San José Sharks ",
-    "Pronostico": " Gana Dallas Stars ",
-    "cuota": 1.70
+    "Partido": " Montreal Canadiens - Pittsburgh Penguins ",
+    "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
+    "cuota": 1.44
   }
 ]
 
 const yesterday = [
   {
-    "Partido": " Rayo Vallecano – Celta Vigo ",
-    "Pronostico": "Más de 1.5 goles ",
-    "cuota": 1.36,
+    "Partido": " Boyacá Chicó - Atlético Huila ",
+    "Pronostico": " Más de 1.5 goles ",
+    "cuota": 1.44,
     "resultado": 0
   },
   {
-    "Partido": " Real Madrid – Cadiz ",
-    "Pronostico": "Más de 2.5 goles ",
-    "cuota": 1.42,
+    "Partido": "Lyon - Niza ",
+    "Pronostico": " Más de 7.5 Tiros de Esquina ",
+    "cuota": 1.40,
     "resultado": 1
   },
   {
-    "Partido": " Lazio – Monza ",
-    "Pronostico": "Gana Lazio ",
-    "cuota": 1.62,
+    "Partido": " Birmingham - Sunderland ",
+    "Pronostico": " Más de 3.5 Tiros de Esquina ",
+    "cuota": 1.40,
     "resultado": 1
   },
   {
-    "Partido": " Hellas Verona – Juventus ",
-    "Pronostico": "Gana Juventus ",
-    "cuota": 1.75,
+    "Partido": " Torreense - Vilafranquense ",
+    "Pronostico": " Torreense o Vilafranquense s ",
+    "cuota": 1.37,
     "resultado": 1
   },
   {
-    "Partido": " Valencia – Real Betis ",
-    "Pronostico": "Valencia o Empate ",
-    "cuota": 1.33,
+    "Partido": " Boston Celtics - Denver Nuggets ",
+    "Pronostico": " Boston Celtics ",
+    "cuota": 1.55,
     "resultado": 1
   },
   {
-    "Partido": " Atlético Mineiro-MG - Cuiabá-MT ",
-    "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.34,
+    "Partido": " San Antonio Spurs - Milwaukee Bucks ",
+    "Pronostico": " Más de 212.5 total puntos ",
+    "cuota": 1.45,
+    "resultado": 0
+  },
+  {
+    "Partido": " Oklahoma City Thunder - Toronto Raptors ",
+    "Pronostico": " Menos de 227 total puntos ",
+    "cuota": 1.43,
+    "resultado": 0
+  },
+  {
+    "Partido": " Toronto Maple Leafs - Pittsburgh Penguins ",
+    "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
+    "cuota": 1.40,
     "resultado": 1
   },
   {
-    "Partido": " Botafogo-RJ - Santos-SP ",
-    "Pronostico": "Más de 0.5 goles de Santos-SP ",
+    "Partido": " Washington Capitals - Tampa Bay Lightning ",
+    "Pronostico": " Más de 5 Total de goles ",
+    "cuota": 1.40,
+    "resultado": 1
+  },
+  {
+    "Partido": " Seattle Kraken- Minnesota Wild",
+    "Pronostico": " Menos de 7.5 goles",
     "cuota": 1.50,
-    "resultado": 0
-  },
-  {
-    "Partido": " FC Magdeburg - Darmstadt 98",
-    "Pronostico": "Ambos Equipos Marcarán(si)",
-    "cuota": 1.48,
-    "resultado": 0
-  },
-  {
-    "Partido": " SK Beveren - Royal Antwerp FC ",
-    "Pronostico": " Menos de 3.5 goles ",
-    "cuota": 1.38,
-    "resultado": 0
-  },
-  {
-    "Partido": " Alashkert - FC Urartu ",
-    "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.41,
-    "resultado": 0
+    "resultado": 1
   }
 ]
 
