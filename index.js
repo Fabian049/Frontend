@@ -130,6 +130,8 @@ const todayList = document.getElementById('responsive-table');
 const yesterdayList = document.getElementById('responsive-table-yesterday');
 
 
+
+
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
@@ -239,6 +241,59 @@ function CrearLista() {
   }
   );
 
+}
+
+// Get the container element
+var btnContainer = document.getElementById("menu");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+
+function toggle(day){
+var todayView = document.getElementById('today')
+var yesterdaView = document.getElementById('yesterday')
+var articlesView = document.getElementById('article')
+var brands = document.getElementById('banner')
+
+
+
+
+if (day === 'today'){
+
+  todayView.style.display = 'block'
+  yesterdaView.style.display = 'none'
+  articlesView.style.display = 'none'
+  brands.style.display = 'block'
+}else if (day === 'yesterday' ){
+  todayView.style.display = 'none'
+  articlesView.style.display = 'none'
+  yesterdaView.style.display = 'block'
+  brands.style.display = 'none'
+}else if (day === 'article' ){
+  todayView.style.display = 'none'
+  yesterdaView.style.display = 'none'
+  articlesView.style.display = 'block'
+  brands.style.display = 'none'
+}else{
+  todayView.style.display = 'block'
+  yesterdaView.style.display = 'none'
+  brands.style.display = 'block'
+}
 }
 
 function openModal() {

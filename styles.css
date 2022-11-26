@@ -75,6 +75,39 @@ h1.titulo,
   transition: 0.2 s linear;
 }
 
+.nav-btn
+{
+  display: block;
+  padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.764);
+  font-size: 20px;
+  /* line-height: 60px; */
+  text-decoration: none;
+}
+
+.article{
+  display: none;
+  padding: 5% 15%;
+  font-size: 22px;
+}
+
+.article-image {
+  object-fit: cover;
+}
+
+.nav-btn:active , .nav-btn:hover{
+
+ 
+  color: #fff;
+  transition: 0.8 s linear;
+}
+
+.active{
+   border-bottom: 2px solid rgb(247, 219, 64);
+   color: #fff;
+}
+
+
 .yesterday-date {
   counter-reset: rgba(218, 216, 216, 0.822);
 }
@@ -88,6 +121,7 @@ h1.titulo,
   padding-top: 35px;
   background-color: #151935;
   padding-bottom: 80px;
+  display: none;
 
 }
 
@@ -375,3 +409,77 @@ ul {
   transition: all .3s;
   font-size: small;
 }
+
+/* 2. Make nav sticky */
+main > nav {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+​
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 500;
+}
+​
+/* Sidebar Navigation */
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid #efefef;
+}
+​
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+​
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #666;
+}
+​
+/** Poor man's reset **/
+* {
+  box-sizing: border-box;
+}
+​
+html, body {
+  background: #fff;
+}
+​
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+​
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-left: 1rem;
+}
+​
+h1 {
+  font-weight: 300;
+}
+​
+/** page layout **/
+main {
+  display: grid;
+  grid-template-columns: 1fr 15em;
+  max-width: 100em;
+  width: 90%;
+  margin: 0 auto;
+}
+​
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+section {
+  padding-bottom: 20rem;
+}
+
+

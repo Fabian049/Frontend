@@ -23,7 +23,7 @@
   <!--  Scripts -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="index.js" defer></script>
- 
+
 
   <!-- Fontawesome Font Icon CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -35,38 +35,245 @@
     <img src="sources/logo.png" class="imglogo">
 
     </divx>
-    <div class="menu">
-      <a class="btn head-btns" href="#yesterday" role="button">Resultados Ayer</a>
-      <a class="btn head-btns" href="#today" role="button">Cuotas Hoy</a>
+    <div class="menu" id="menu">
+      <a class="nav-btn active" role="button" onclick="toggle('today')">Cuotas Hoy</a>
+      <a class="nav-btn" onclick="toggle('yesterday')" role="button">Resultados Ayer</a>
+      <a class="nav-btn" role="button" onclick="toggle('article')">Antes de Apostar</a>
     </div>
   </div>
 
-  <div class="header">
-    <h1 class="titulo">Pronósticos gratis, parleys gratis, cuotas gratis, apuestas gratis!!! </h1>
-    <p class="titulo">Cuotas gratis a diario analizadas por los mejores pronosticadores, arma tu parley, calcula tu
-      cuota y tus ganancias. <br>
-      Si deseas apoyarnos basta con un solo click en la publicidad </p>
+
+  <div id="banner">
+    <div class="header">
+      <h1 class="titulo">Pronósticos gratis, parleys gratis, cuotas gratis, apuestas gratis!!! </h1>
+      <p class="titulo">Cuotas gratis a diario analizadas por los mejores pronosticadores, arma tu parley, calcula tu
+        cuota y tus ganancias. <br>
+        Si deseas apoyarnos basta con un solo click en la publicidad </p>
+    </div>
+
+
+
+
+    <nav class="navbar bg-light" id="brands">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.rushbet.co/?page=get-started#home" target="_blank">
+          <img src="https://guiadecasinosonline.com.co/wp-content/uploads/2019/09/logo-rushbet-casino.png"
+            alt="Bootstrap" width="130" height="60">
+        </a>
+        <a class="navbar-brand" href="https://betplay.com.co/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/BetPlay-logo.png" alt="Bootstrap" width="130"
+            height="60">
+        </a>
+        <a class="navbar-brand" href="https://apuestas.wplay.co/es" target="_blank">
+          <img
+            src="https://imgs.search.brave.com/9hjiWelwZXNh3GfYrx8IbVsmWvhOrmlzi2O4DZUfHhc/rs:fit:500:143:1/g:ce/aHR0cHM6Ly9zaXBh/Z2EuY28vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDcvd3Bs/YXktbG9nby5wbmc"
+            alt="Bootstrap" width="130" height="60">
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+  <div id="article" class="article">
+
+    <h1>Ten en cuenta estos consejos antes de lanzar tu apuesta</h1>
+    <p> <em>Haz que tu apuestas sean más efectivas y miniza las posibilidades de riesgo.</em></p>
+    <br>
+    <img class="article-image" src="./assets/bet.jpg" alt="" srcset="" width="100%" height="450px">
+
+    <br><br>
+
+    <section id="introduction">
+      <h2>No apuestes a ciegas a los favoritos</h2>
+
+
+      <p>Muchos de nosotros hemos visto que un partido de fútbol está a punto de empezar y hemos apostado por los
+        favoritos, por curiosidad.
+
+        Sin embargo, las casas de apuestas saben que en el mercado de apuestas 1X2, todos los favoritos en el juego
+        ganan peso en dinero, por lo que las apuestas rara vez obtienen beneficios independientemente de que esa
+        selección gane.
+
+        Por supuesto, apostar por los favoritos significa, en primer lugar, obtener beneficios decrecientes.
+
+        Una trampa en la que puede caer un apostador es la de acumular un número de favoritos en su apuesta sin correr
+        cada juego, preguntándose si realmente cree que cada equipo ganará.</p>
+
+    </section>
+    <br>
+    <br>
+    <section id="introduction">
+      <h2>Revisa otros mercados disponibles</h2>
+
+      <p>Aunque muchos de nosotros preferimos apostar en el mercado 1X2 o colocar acumuladores en muchos equipos, a
+        menudo se puede encontrar valor al explorar mercados de apuestas menos conocidos.
+
+        Puede ser rentable ver un partido y ver cómo se desarrolla antes de mirar las probabilidades.
+
+        Es posible que esperes que el equipo A y el equipo B jueguen un partido con muchos goles y que el equipo A salga
+        victorioso. En ese caso, las apuestas <a href="https://footyaccumulators.com/how-to/btts-betting" target="_blank" rel="noopener noreferrer">BTTS</a>  podrían ser su mejor opción, especialmente si el precio es atractivo.
+
+        O tal vez no tenga una idea clara de qué equipo ganará, pero le gusta la idea de un partido de pocos goles en el
+        que podría apostar por menos de 2,5 goles, o menos de 1,5 goles.</p>
+
+        <br>
+
+        <img class="article-image" src="./assets/hockey.jpg" alt="" srcset="" width="100%" height="450px">
+    </section>
+    <br>
+    <br>
+    <section>
+      <h2>Anota a tus apuestas y limita tus pérdidas</h2>
+
+      <p>
+        Te recomendamos que registres tus apuestas diaria o semanalmente.
+
+        Registra información como las apuestas, los tipos de mercado de apuestas, las probabilidades y el resultado de
+        cada parido que apostó.
+
+        Después de hacer una serie de apuestas, comprueba la información para ver si tienes más éxito con ciertos tipos
+        de apuestas.
+
+        Es posible que su estrategia de apuestas necesite algunos ajustes. El objetivo del juego es obtener el mayor
+        beneficio posible de las selecciones ganadoras y asegurarse de que las apuestas perdedoras tienen un elemento de
+        control de daños. Cuanto más se esfuerce, más probabilidades tendrá de recuperar su dinero.
+      </p>
+
+
+    </section>
+    <br>
+    <br>
+    <section>
+      <h2>Miniza el riesgo de tu apuesta</h2>
+      <p>
+        Incluso las coberturas son algo más que salidas de emergencia. Aunque es matemáticamente imposible obtener
+        beneficios a favor o en contra de un resultado concreto (en cuyo caso la casa de apuestas quebraría
+        rápidamente), una selección cuidadosa del mercado de fútbol le permitirá forzar su valor. Puede crear coberturas
+        que minimicen el riesgo sin destruir los beneficios.
+
+        Tomemos como ejemplo el partido de la Premier League entre el Tottenham y el Newcastle.
+
+        La posibilidad de que el Newcastle gane por 6/1, parecía un punto que merecía la pena teniendo
+        en cuenta su actuación contra el Chelsea recientemente, pero es posible que se necesiten algunas garantías
+        antes de desprenderse del dinero. 
+
+        <b> Elegir un mercado común para minimizar las posibilidades de perder</b> todas las apuestas habría sido lo mejor en
+        este caso. Tiene sentido empezar con un mercado bonito y amplio en el que se puedan obtener beneficios
+        independientemente del equipo que acabe anotando puntos.
+
+        Y dada la destreza en el tiro de estos dos equipos, habría valido la pena considerar más de  2,5 goles a 4/5.
+
+        Otra opción de cobertura es utilizar mercados que incluyan la cobertura de cuotas bajas. Por ejemplo, apueste
+        por el Newcastle o por un empate a 13/8, o por un empate del Newcastle sin apuestas a 17/5 (un empate devuelve
+        su apuesta).
+      </p>
+    </section>
+<br>
+<br>
+    <section>
+      <p>  Y lo mas importante, las apuesta deportivas son una forma divertida de ocuparnos y 
+ simultaneamente ganar dinero. Sin embargo es conveniente gastar un tiempo prudente en esta actividad y dejar 
+ espacio para nuestras demas actividades cotidianas.
+      </p>
+<br>
+      <div>
+        <em>Equipo apuestalofree</em>
+     
+      </div>
+
+    </section>
   </div>
 
 
-
-       
-      <nav class="navbar bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="https://www.rushbet.co/?page=get-started#home" target="_blank">
-            <img src="https://guiadecasinosonline.com.co/wp-content/uploads/2019/09/logo-rushbet-casino.png" alt="Bootstrap" width="130" height="60">
-          </a>
-          <a class="navbar-brand" href="https://betplay.com.co/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/BetPlay-logo.png" alt="Bootstrap" width="130" height="60">
-          </a>
-          <a class="navbar-brand" href="https://apuestas.wplay.co/es" target="_blank">
-            <img src="https://imgs.search.brave.com/9hjiWelwZXNh3GfYrx8IbVsmWvhOrmlzi2O4DZUfHhc/rs:fit:500:143:1/g:ce/aHR0cHM6Ly9zaXBh/Z2EuY28vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDcvd3Bs/YXktbG9nby5wbmc" alt="Bootstrap" width="130" height="60">
-          </a>
-        </div>
-      </nav>
-
-
-      
+  <main class="article">
+    <div>
+      <h1>Hockey</h1>
+      <p><em>How hockey works?<br />&rarr; <a
+            href="https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/"
+            target="_top">https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/</a></em></p>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>…</p>
+      </section>
+      <section id="request-response">
+        <h2>Request &amp; Response</h2>
+        <p>…</p>
+      </section>
+      <section id="authentication">
+        <h2>Authentication</h2>
+        <p>…</p>
+      </section>
+      <section id="endpoints">
+        <h2>Endpoints</h2>
+        <section id="endpoints--root">
+          <h3>Root</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--cities-overview">
+          <h3>Cities Overview</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-detail">
+          <h3>City Detail</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-config">
+          <h3>City Config</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-spots-overview">
+          <h3>City Spots Overview</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-spot-detail">
+          <h3>City Spot Detail</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-icons-overview">
+          <h3>City Icons Overview</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-icon-detail">
+          <h3>City Icon Detail</h3>
+          <p>…</p>
+        </section>
+      </section>
+      <section id="links">
+        <h2>Links</h2>
+        <p>…</p>
+      </section>
+      <section id="expanders">
+        <h2>Expanders</h2>
+        <p>…</p>
+      </section>
+      <section id="filters">
+        <h2>Filters</h2>
+        <p>…</p>
+      </section>
+    </div>
+    <nav class="section-nav">
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#request-response">Request &amp; Response</a></li>
+        <li><a href="#authentication">Authentication</a></li>
+        <li><a href="#endpoints">Endpoints</a>
+          <ul>
+            <li class=""><a href="#endpoints--root">Root</a></li>
+            <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
+            <li class=""><a href="#endpoints--city-detail">City Detail</a></li>
+            <li class=""><a href="#endpoints--city-config">City Config</a></li>
+            <li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
+            <li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
+            <li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
+            <li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
+          </ul>
+        </li>
+        <li class=""><a href="#links">Links</a></li>
+        <li class=""><a href="#expanders">Expanders</a></li>
+        <li class=""><a href="#filters">Filters</a></li>
+      </ol>
+    </nav>
+  </main>
 
   <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -114,16 +321,15 @@
 
     </div>
     <h2>Pronósticos de hoy</h2>
-    <p class="card-subtitle mb-2 text-muted date" id="date" ></p>
+    <p class="card-subtitle mb-2 text-muted date" id="date"></p>
     <!-- Button trigger modal -->
     <div class="parlay">
       <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="My Parlay">
-      <button type="button" class="float" data-bs-toggle="modal"  data-bs-target="#modal"
-        onclick="openModal()">
-        <i class="fa-solid fa-list my-float"></i>
-        <span class="badge">1</span>
-      </button>
-    </span>
+        <button type="button" class="float" data-bs-toggle="modal" data-bs-target="#modal" onclick="openModal()">
+          <i class="fa-solid fa-list my-float"></i>
+          <span class="badge">1</span>
+        </button>
+      </span>
     </div>
     <ul class="responsive-table" id="responsive-table">
     </ul>
@@ -133,12 +339,14 @@
   <div class="list-section yesterday" id="yesterday">
     <h2>Pronósticos de Ayer</h2>
     <p class="card-subtitle mb-2 text-muted date yesterday-date" id="yesterday-date"></p>
-<br>
+    <br>
     <ul class="responsive-table" id="responsive-table-yesterday">
 
     </ul>
   </div>
   </div>
+
+
 
 
   <footer class="bg-dark text-center text-white footer">
@@ -152,7 +360,7 @@
         informacion publicada en este sitio.</div>
     </div>
     <br>
-    
+
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
