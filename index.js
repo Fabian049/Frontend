@@ -2,117 +2,118 @@ import("./service/service.js");
 
 const forecasts = [
   {
-    "Partido": " Lens - Clermont ",
-    "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.44
-  },
-  {
-    "Partido": "  Bayer Leverkusen – VfB Stuttgart ",
-    "Pronostico": " Gana Bayer Leverkuse ",
-    "cuota": 1.79
-  },
-  {
-    "Partido": " Sampdoria - Lecce ",
-    "Pronostico": " Más de 0.5 goles de Sampdoria ",
-    "cuota": 1.37
-  },
-  {
-    "Partido": " Los Angeles Clippers - Brooklyn Nets  ",
-    "Pronostico": " Handicap Brooklyn Nets +7",
-    "cuota": 1.44
-  },
-  {
-    "Partido": " Washington Wizards - Utah Jazz ",
-    "Pronostico": " Más de 213 puntos total ",
-    "cuota": 1.40
-  },
-  {
-    "Partido": " Detroit Pistons - Boston Celtics ",
-    "Pronostico": " Handicap Detroit Pistons +16",
-    "cuota": 1.41
-  },
-  {
-    "Partido": " Indiana Pacers - Toronto Raptors ",
-    "Pronostico": " Más de 221.5 total puntos ",
-    "cuota": 1.40
-  },
-  {
-    "Partido": " Philadelphia Flyers - Ottawa Senators ",
-    "Pronostico": " Ottawa Senators +1 Hándicap - Tiempo reglamentario ",
+    "Partido": " Portugal - Uruguay ",
+    "Pronostico": " Más de 1.5 Total de goles ",
     "cuota": 1.38
   },
   {
-    "Partido": " New Jersey Devils - Arizona Coyotes ",
-    "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
-    "cuota": 1.47
+    "Partido": "  Portugal - Uruguay ",
+    "Pronostico": " Más de 8.5 Total de Tiros de Esquina ",
+    "cuota": 1.50
   },
   {
-    "Partido": " Montreal Canadiens - Pittsburgh Penguins ",
+    "Partido": " Philadelphia 76ers - Atlanta Hawks ",
+    "Pronostico": " Philadelphia 76ers +7 Hándicap - Prórroga incluida ",
+    "cuota": 1.40
+  },
+  {
+    "Partido": " Washington Wizards - Minnesota Timberwolves ",
+    "Pronostico": " Más de 219 Total de puntos - Prórroga incluida ",
+    "cuota": 1.38
+  },
+  {
+    "Partido": " Boston Celtics - Charlotte Hornets ",
+    "Pronostico": " Más de 217 Total de puntos - Prórroga incluida ",
+    "cuota": 1.40
+  },
+  {
+    "Partido": " Denver Nuggets - Houston Rockets ",
+    "Pronostico": " Más de 221 Total de puntos - Prórroga incluida ",
+    "cuota": 1.40
+  },
+  {
+    "Partido": " New York Rangers - New Jersey Devils ",
+    "Pronostico": " Más de 5.5 Número total de goles - Prórroga y tanda de penaltis incluida ",
+    "cuota": 1.68
+  },
+  {
+    "Partido": " Buffalo Sabres - Tampa Bay Lightning ",
+    "Pronostico": " Tampa Bay Lightning Cuotas del partido - Tiempo reglamentario ",
+    "cuota": 2.05
+  },
+  {
+    "Partido": " Columbus Blue Jackets - Vegas Golden Knights ",
     "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
-    "cuota": 1.44
+    "cuota": 1.48
+  },
+  {
+    "Partido": " St Louis Blues - Dallas Stars ",
+    "Pronostico": "Menos de 7 Total de goles - Tiempo reglamentario ",
+    "cuota": 1.35
   }
 ]
 
-const yesterday = [
+
+const yesterday =[
   {
-    "Partido": " Boyacá Chicó - Atlético Huila ",
-    "Pronostico": " Más de 1.5 goles ",
-    "cuota": 1.44,
-    "resultado": 0
-  },
-  {
-    "Partido": "Lyon - Niza ",
-    "Pronostico": " Más de 7.5 Tiros de Esquina ",
-    "cuota": 1.40,
-    "resultado": 1
-  },
-  {
-    "Partido": " Birmingham - Sunderland ",
-    "Pronostico": " Más de 3.5 Tiros de Esquina ",
-    "cuota": 1.40,
-    "resultado": 1
-  },
-  {
-    "Partido": " Torreense - Vilafranquense ",
-    "Pronostico": " Torreense o Vilafranquense s ",
-    "cuota": 1.37,
-    "resultado": 1
-  },
-  {
-    "Partido": " Boston Celtics - Denver Nuggets ",
-    "Pronostico": " Boston Celtics ",
-    "cuota": 1.55,
-    "resultado": 1
-  },
-  {
-    "Partido": " San Antonio Spurs - Milwaukee Bucks ",
-    "Pronostico": " Más de 212.5 total puntos ",
-    "cuota": 1.45,
-    "resultado": 0
-  },
-  {
-    "Partido": " Oklahoma City Thunder - Toronto Raptors ",
-    "Pronostico": " Menos de 227 total puntos ",
-    "cuota": 1.43,
-    "resultado": 0
-  },
-  {
-    "Partido": " Toronto Maple Leafs - Pittsburgh Penguins ",
-    "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
-    "cuota": 1.40,
-    "resultado": 1
-  },
-  {
-    "Partido": " Washington Capitals - Tampa Bay Lightning ",
-    "Pronostico": " Más de 5 Total de goles ",
-    "cuota": 1.40,
-    "resultado": 1
-  },
-  {
-    "Partido": " Seattle Kraken- Minnesota Wild",
-    "Pronostico": " Menos de 7.5 goles",
+    "Partido": " Millonarios FC - Junior Barranquilla ",
+    "Pronostico": "Millonarios FC Final del partido ",
     "cuota": 1.50,
     "resultado": 1
+  },
+  {
+    "Partido": "  Millonarios FC - Junior Barranquilla ",
+    "Pronostico": "Más de 8.5 Total de Tiros de Esquina ",
+    "cuota": 1.60,
+    "resultado": 0
+  },
+  {
+    "Partido": " España - Alemania ",
+    "Pronostico": " Ambos Equipos Marcarán ",
+    "cuota": 1.68,
+    "resultado": 1
+  },
+  {
+    "Partido": " Minnesota Wild - Arizona Coyotes ",
+    "Pronostico": "Gana Minnesota Wild ",
+    "cuota": 1.58,
+    "resultado": 1
+  },
+  {
+    "Partido": " Chicago Blackhawks - Winnipeg Jets ",
+    "Pronostico": " Winnipeg Jets Apuesta sin empate - Tiempo reglamentario ",
+    "cuota": 1.53,
+    "resultado": 1
+  },
+  {
+    "Partido": " Anaheim Ducks - Seattle Kraken ",
+    "Pronostico": " Ambos Equipos Marcarán al menos 2 goles - Tiempo reglamentario ",
+    "cuota": 1.50,
+    "resultado": 1
+  },
+  {
+    "Partido": " San José Sharks - Vancouver Canucks ",
+    "Pronostico": " Menos de 7.5 Total de goles - Tiempo reglamentario ",
+    "cuota": 1.34,
+    "resultado": 1
+  },
+  {
+    "Partido": " Brooklyn Nets - Portland Trail Blazers ",
+    "Pronostico": " Menos de 231.5 Total de puntos - Prórroga incluida ",
+    "cuota": 1.41,
+    "resultado": 1
+  },
+  {
+    "Partido": " Minnesota Timberwolves - Golden State Warriors ",
+    "Pronostico": " Menos de 244.5 Total de puntos - Prórroga incluida ",
+    "cuota": 1.42,
+    "resultado": 0
+  },
+  {
+    "Partido": " Los Angeles Clippers - Indiana Pacers ",
+    "Pronostico": " Los Angeles Clippers +8 Hándicap - Prórroga incluida ",
+    "cuota": 1.40,
+    "resultado": 0
   }
 ]
 
@@ -150,7 +151,7 @@ function getEarning() {
 
   parlay.map(item => {
 
-    earning = earning + item.cuota
+    earning = earning * item.cuota
   })
 
   earningElement.innerHTML = `${formatter.format(earning * bet)}`
@@ -200,7 +201,7 @@ function removeCuota(index) {
 
 function addCuota(index) {
   parlay.push(forecasts[index])
-  console.log(parlay)
+
   openModal()
 }
 
